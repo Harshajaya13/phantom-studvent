@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base ─────────────────────────────────────────── */
+body {
+  background-color: #FAFAFA; /* Original Light Gray */
+  color: #1A1A2E; /* Deep Charcoal */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Scrollbar ────────────────────────────────────── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ─── Glassmorphism (Light Oceanic) ─────────────────── */
+.glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* ─── Skeleton Shimmer ─────────────────────────────── */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.04) 25%,
+    rgba(0, 0, 0, 0.08) 50%,
+    rgba(0, 0, 0, 0.04) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+  border-radius: 6px;
+}
+
+/* ─── Gradient Separators ────────────────────────── */
+.gradient-separator {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.08) 50%,
+    transparent
+  );
+}
+
+/* ─── Breathing Glow (Sky Blue) ────────────────────── */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 10px rgba(56, 189, 248, 0.1); }
+  50% { box-shadow: 0 0 25px rgba(56, 189, 248, 0.25); }
+}
+
+.glow-ready {
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+.glow-ready:hover {
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+}
+
+/* ─── Arrow Swing Animation ───────────────────────── */
+@keyframes arrow-swing {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+
+.animate-arrow-swing {
+  display: inline-block;
+  animation: arrow-swing 1.2s ease-in-out infinite;
+}
+
+/* ─── Prose Override (High Contrast Light) ──────────── */
+.prose {
+  --tw-prose-body: #334155; /* Slate 700 */
+  --tw-prose-headings: #1A1A2E;
+  --tw-prose-links: #38BDF8;
+  --tw-prose-bold: #1A1A2E;
+  --tw-prose-bullets: #38BDF8;
+  --tw-prose-quotes: #64748B;
+  --tw-prose-hr: rgba(0, 0, 0, 0.1);
+}
+
+/* ─── Selection Color ──────────────────────────────── */
+::selection {
+  background: rgba(56, 189, 248, 0.2);
+  color: #1A1A2E;
+}
+
+/* ─── Select dropdown fix ───────────────────────────── */
+select option {
+  background: #FFFFFF;
+  color: #1A1A2E;
+}
