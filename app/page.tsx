@@ -29,7 +29,10 @@ export default function Home() {
                   Hosting a platform designed to solve real, painful student problems in a community that treats the solution like a useless penny was my biggest mistake. The sheer lack of value, appreciation, and constructive engagement from the target demographic made maintaining this project feel like a complete waste of effort.
                 </p>
                 <p className="text-[12px] leading-relaxed text-red-600 mt-2 font-semibold">
-                  This website is now a frontend-only shell. No data is stored, and backend APIs have been shutdown.
+                  This website is now a frontend-only shell. No data is stored, and backend APIs have been shutdown. 
+                  <span className="block mt-2 font-black text-red-950 underline decoration-red-500 decoration-2 underline-offset-4">
+                    We will continue this project again only when the creator gets free time and when people actually understand the real pain.
+                  </span>
                 </p>
               </div>
             </div>

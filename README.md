@@ -6,7 +6,7 @@
 > 
 > **Why it failed:** While it was active and buzzing at the start, the experiment failed because the target crowd completely lacks consistency. People complain about their problems, but they are too inconsistent to engage in any structured way that actually changes things. Hosting a high-fidelity solution for a demographic that treats their own core struggles like a cheap penny was a mistake. I am not running a charity for short-lived, brain-eating complaints.
 >
-> This repository is a **frontend-only shell** of the original app. All backend routes, Supabase integrations, Upstash Redis rate-limiters, and Turnstile protections have been stripped out. The live site is now a read-only museum of what could have been.
+> This repository is a **frontend-only shell** of the original app. All backend routes, Supabase integrations, Upstash Redis rate-limiters, and Turnstile protections have been stripped out. The live site is now a read-only museum of what could have been. **We will continue this project again only when the creator gets free time and when the target audience actually understands the real pain.**
 
 ---
 

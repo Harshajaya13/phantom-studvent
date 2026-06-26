@@ -36,7 +36,7 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sans: ['var(--font-inter)'],
+        sans: ['var(--font-outfit)', 'sans-serif'],
       },
       fontSize: {
         'hero': 'clamp(2rem, 5vw, 3.5rem)',
